@@ -1,0 +1,41 @@
+{
+  "name": "docman",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "NODE_ENV=production node bin/www",
+    "start:dev": "NODE_ENV=development nodemon -w server bin/www",
+    "test:bend": "NODE_ENV=testing istanbul cover _mocha test/server/**/*.js"
+  },
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "~1.13.2",
+    "cors": "^2.8.1",
+    "debug": "~2.2.0",
+    "dotenv": "^2.0.0",
+    "express": "~4.13.1",
+    "jsonwebtoken": "^5.7.0",
+    "mongoose": "^4.4.12",
+    "morgan": "~1.6.1",
+    "socket.io": "^1.4.6",
+    "validator": "^5.2.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-immutable": "^1.6.0",
+    "chai-spies": "^0.7.1",
+    "eslint": "^2.12.0",
+    "eslint-config-airbnb": "^9.0.1",
+    "eslint-plugin-import": "^1.8.1",
+    "eslint-plugin-jsx-a11y": "^1.4.2",
+    "eslint-plugin-promise": "^1.1.0",
+    "eslint-plugin-react": "^5.2.2",
+    "istanbul": "^1.0.0-alpha.2",
+    "mocha": "^2.4.5",
+    "sinon": "^1.17.4",
+    "supertest": "^1.2.0"
+  },
+  "engines": {
+    "node": "6.2.1"
+  }
+}
